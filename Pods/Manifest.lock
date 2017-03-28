@@ -1,0 +1,20 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - FMDBMigrationManager (1.4.1):
+    - FMDBMigrationManager/System (= 1.4.1)
+  - FMDBMigrationManager/System (1.4.1):
+    - FMDB/standard (>= 2.3)
+
+DEPENDENCIES:
+  - FMDB
+  - FMDBMigrationManager
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
+
+PODFILE CHECKSUM: cd2cd6bd21f10919c4c4bc36cc4a1e630415a0c2
+
+COCOAPODS: 1.1.1

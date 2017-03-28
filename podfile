@@ -1,0 +1,7 @@
+platform :ios, '10.2'
+
+target 'DataMigration' do
+  pod 'FMDB'
+  pod 'FMDBMigrationManager'
+
+end
