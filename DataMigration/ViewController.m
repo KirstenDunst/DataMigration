@@ -19,15 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //创建表
+    [DataBaseTool createTable];
     
+    UIButton *myCreateButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    myCreateButton.frame = CGRectMake(0, 0, 100, 100);
+    [myCreateButton setBackgroundColor:[UIColor grayColor]];
+    [myCreateButton setTitle:@"qianyi" forState:UIControlStateNormal];
+    [myCreateButton addTarget:self action:@selector(buttonChoose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:myCreateButton];
+    
+    
+}
+- (void)buttonChoose:(UIButton *)sender{
     //1.fmdb数据库迁移添加字段
     DataBaseTool *tool = [DataBaseTool shareMyFMDB];
     [tool qianyi];
     
     
     //2.FMDBMigrationManager数据库迁移
-//    [self FMDBMigrationManagerSqlite];
-    
+    //    [self FMDBMigrationManagerSqlite];
 }
 - (void)FMDBMigrationManagerSqlite{
         NSString *pathStr = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data.sqlite"];

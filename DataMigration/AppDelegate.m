@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "DataBaseTool.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-     [DataBaseTool createTable];
+
     
     NSLog(@"沙盒路径>>>>>>>>>>>%@",NSHomeDirectory());
     return YES;

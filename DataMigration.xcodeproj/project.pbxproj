@@ -14,6 +14,11 @@
 		1F3D52681E8A62A50074BD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D52671E8A62A50074BD68 /* Assets.xcassets */; };
 		1F3D526B1E8A62A50074BD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D52691E8A62A50074BD68 /* LaunchScreen.storyboard */; };
 		1F3D52741E8A62F00074BD68 /* DataBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52731E8A62F00074BD68 /* DataBaseTool.m */; };
+		1F3D52771E8A685D0074BD68 /* HandleSqliteTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52761E8A685D0074BD68 /* HandleSqliteTable.m */; };
+		1F3D527A1E8A81620074BD68 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52791E8A81620074BD68 /* SecondViewController.m */; };
+		1F3D527D1E8A84E90074BD68 /* CeShiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D527C1E8A84E90074BD68 /* CeShiModel.m */; };
+		1F3D52801E8A85330074BD68 /* YuLeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D527F1E8A85330074BD68 /* YuLeModel.m */; };
+		1F3D52831E8A87CF0074BD68 /* DataAutoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */; };
 		21C9E2B66A2D4AC63962645F /* libPods-DataMigration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,16 @@
 		1F3D526C1E8A62A50074BD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3D52721E8A62F00074BD68 /* DataBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseTool.h; sourceTree = "<group>"; };
 		1F3D52731E8A62F00074BD68 /* DataBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseTool.m; sourceTree = "<group>"; };
+		1F3D52751E8A685D0074BD68 /* HandleSqliteTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleSqliteTable.h; sourceTree = "<group>"; };
+		1F3D52761E8A685D0074BD68 /* HandleSqliteTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleSqliteTable.m; sourceTree = "<group>"; };
+		1F3D52781E8A81620074BD68 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1F3D52791E8A81620074BD68 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1F3D527B1E8A84E90074BD68 /* CeShiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeShiModel.h; sourceTree = "<group>"; };
+		1F3D527C1E8A84E90074BD68 /* CeShiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeShiModel.m; sourceTree = "<group>"; };
+		1F3D527E1E8A85330074BD68 /* YuLeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuLeModel.h; sourceTree = "<group>"; };
+		1F3D527F1E8A85330074BD68 /* YuLeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuLeModel.m; sourceTree = "<group>"; };
+		1F3D52811E8A87CF0074BD68 /* DataAutoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAutoTool.h; sourceTree = "<group>"; };
+		1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAutoTool.m; sourceTree = "<group>"; };
 		34104B134422A4DF66C5EBA6 /* Pods-DataMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.debug.xcconfig"; sourceTree = "<group>"; };
 		3739ADFEE8B32CE1A4B3D73C /* Pods-DataMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.release.xcconfig"; sourceTree = "<group>"; };
 		D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataMigration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +89,16 @@
 				1F3D52621E8A62A50074BD68 /* ViewController.m */,
 				1F3D52721E8A62F00074BD68 /* DataBaseTool.h */,
 				1F3D52731E8A62F00074BD68 /* DataBaseTool.m */,
+				1F3D52781E8A81620074BD68 /* SecondViewController.h */,
+				1F3D52791E8A81620074BD68 /* SecondViewController.m */,
+				1F3D52751E8A685D0074BD68 /* HandleSqliteTable.h */,
+				1F3D52761E8A685D0074BD68 /* HandleSqliteTable.m */,
+				1F3D52811E8A87CF0074BD68 /* DataAutoTool.h */,
+				1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */,
+				1F3D527B1E8A84E90074BD68 /* CeShiModel.h */,
+				1F3D527C1E8A84E90074BD68 /* CeShiModel.m */,
+				1F3D527E1E8A85330074BD68 /* YuLeModel.h */,
+				1F3D527F1E8A85330074BD68 /* YuLeModel.m */,
 				1F3D52641E8A62A50074BD68 /* Main.storyboard */,
 				1F3D52671E8A62A50074BD68 /* Assets.xcassets */,
 				1F3D52691E8A62A50074BD68 /* LaunchScreen.storyboard */,
@@ -231,10 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3D52801E8A85330074BD68 /* YuLeModel.m in Sources */,
+				1F3D527A1E8A81620074BD68 /* SecondViewController.m in Sources */,
 				1F3D52741E8A62F00074BD68 /* DataBaseTool.m in Sources */,
 				1F3D52631E8A62A50074BD68 /* ViewController.m in Sources */,
+				1F3D52771E8A685D0074BD68 /* HandleSqliteTable.m in Sources */,
+				1F3D527D1E8A84E90074BD68 /* CeShiModel.m in Sources */,
 				1F3D52601E8A62A50074BD68 /* AppDelegate.m in Sources */,
 				1F3D525D1E8A62A50074BD68 /* main.m in Sources */,
+				1F3D52831E8A87CF0074BD68 /* DataAutoTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +423,7 @@
 				1F3D52711E8A62A50074BD68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,7 +24,6 @@
 
 
 #import "DataBaseTool.h"
-
 #import <FMDatabase.h>
 
 static  FMDatabase *__db;
@@ -38,44 +37,31 @@ static  FMDatabase *__db;
 
 @implementation DataBaseTool
 
+
 + (void)createTable{
     NSString *pathStr = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data.sqlite"];
-    
     __db = [FMDatabase databaseWithPath:pathStr];
     if ([__db open]) {
         [__db executeUpdate:@"create table if not exists qianyi(id integer primary key autoincrement,problem text not null,adress text not null,date text not null,isRead text not null);"];
     }
     [__db close];
 }
-
-
 + (instancetype)shareMyFMDB{
     static dispatch_once_t once;
-    
     static id instance;
-    
     dispatch_once(&once, ^{
-        
         instance = [self new];
     });
-    
     return instance;
 }
-
 - (void)qianyi{
     //依次类推
      self.dbPath =  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data.sqlite"];
     NSInteger oldSqliteVer = 1;
     [self upgrade:oldSqliteVer];    //更新数据库内容
 }
-
-
-
-
 //然后用递归的方式更新
 - (void)upgrade:(NSInteger)oldVersion{
-   
-    
     if (oldVersion >= kCurrentSqliteVersion) {
         return;
     }
@@ -84,24 +70,19 @@ static  FMDatabase *__db;
             [self upgradeFrom0To1];
             [self insertSqliteVersion:kCurrentSqliteVersion];   //版本号更新需要放在更新数据库内容之后，在没有版本号的数据库版本中，需要在upgrade的地方去创建version表
             break;
-            
         case 1: //从1版本升级到2版本
             [self upgradeFrom1To2];
             [self insertSqliteVersion:kCurrentSqliteVersion];   //版本号更新需要放在更新数据库内容之后，在没有版本号的数据库版本中，需要在upgrade的地方去创建version表
             break;
-            
         case 2: //版本拓展：以后若有增加则持续增加
             [self upgradeFrom2To3];
             [self insertSqliteVersion:kCurrentSqliteVersion];   //版本号更新需要放在更新数据库内容之后，在没有版本号的数据库版本中，需要在upgrade的地方去创建version表
             break;
-            
         case 3: //版本拓展：以后若有增加则持续增加            
             [self upgradeFrom3To4];
             [self insertSqliteVersion:kCurrentSqliteVersion];   //版本号更新需要放在更新数据库内容之后，在没有版本号的数据库版本中，需要在upgrade的地方去创建version表
             break;
-            
         default:
-            
             break;
     }
     oldVersion ++;
@@ -117,10 +98,8 @@ static  FMDatabase *__db;
 - (void)upgradeFrom1To2 {
     //这里执行Sql语句 执行版本1到版本2的更新
 //    FMDatabase * db = [FMDatabase databaseWithPath:self.dbPath];
-    
     NSNumber *userId = @1;
 //    [NSNumber numberWithLongLong:[UserManeger shareInstance].currentUser.uid];
-    
     if ([__db open]) {
         //添加字段以及默认值属性 如果存在这个字段则返回no添加不了，如果返回yes则证明没有这个字段并且添加字段成功
         NSString* SysMessageSql = [NSString stringWithFormat:@"alter table qianyi add SysMessageSql1 int default %@",userId];
@@ -147,7 +126,6 @@ static  FMDatabase *__db;
         }
         [__db close];
     }
-    
      NSLog(@"从1版本升级到2版本");
 }
 - (void)upgradeFrom2To3{
@@ -156,5 +134,13 @@ static  FMDatabase *__db;
 - (void)upgradeFrom3To4{
      NSLog(@"从3版本升级到4版本");
 }
+
+
+
+
+
+
+
+
 
 @end
