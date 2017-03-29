@@ -75,6 +75,7 @@ static FMDatabase *__db;
         }
         [__db close];
 
+        //需要迭代升级的话可以在这里掉自己的方法
     }else if([self needUpdateTabelArray:self.modelArray]) {
         
         NSLog(@"数据库已经存在路径,但需要新增数据库表:%@",kCacheDBPath);
@@ -84,6 +85,7 @@ static FMDatabase *__db;
         //新建数据表
         [self createNewTable:tabelName];
         
+        //需要迭代升级的话可以在这里掉自己的方法
     }else if ([self needChangeTableColumnWithArr:self.modelArray]){
         NSLog(@"数据库已存在，表格也已存在，但是字段需要更新");
        //查询表里面的字段是否有新的字段添加
@@ -93,6 +95,8 @@ static FMDatabase *__db;
             //对比数据库和现有的属性sting
            [self addNewColumnWithUpdateTable:obj newAttribe:array];
         }
+        
+        //需要迭代升级的话可以在这里掉自己的方法
     }else{
         
         NSLog(@"数据库已经存在路径,不需要新增数据库表:%@",kCacheDBPath);
@@ -209,7 +213,6 @@ static FMDatabase *__db;
         [__db close];
         
     }
-    
     
     //需要更新的字段
     NSMutableArray *needUpdateName =[NSMutableArray array];

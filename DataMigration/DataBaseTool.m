@@ -31,7 +31,7 @@ static  FMDatabase *__db;
 #define kCurrentSqliteVersion 3  //当前数据库的版本号，这里用作声明一个，实际中可应用本地存储一个
 
 @interface DataBaseTool ()
-@property(copy , nonatomic)NSString *dbPath;
+//@property(copy , nonatomic)NSString *dbPath;
 @end
 
 
@@ -56,7 +56,7 @@ static  FMDatabase *__db;
 }
 - (void)qianyi{
     //依次类推
-     self.dbPath =  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data.sqlite"];
+//     self.dbPath =  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data.sqlite"];
     NSInteger oldSqliteVer = 1;
     [self upgrade:oldSqliteVer];    //更新数据库内容
 }

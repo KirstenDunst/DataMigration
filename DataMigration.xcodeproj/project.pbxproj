@@ -19,6 +19,8 @@
 		1F3D527D1E8A84E90074BD68 /* CeShiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D527C1E8A84E90074BD68 /* CeShiModel.m */; };
 		1F3D52801E8A85330074BD68 /* YuLeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D527F1E8A85330074BD68 /* YuLeModel.m */; };
 		1F3D52831E8A87CF0074BD68 /* DataAutoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */; };
+		1F5D55D91E8B827600A7EB24 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */; };
+		1F5D55DC1E8B85D400A7EB24 /* MigrationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */; };
 		21C9E2B66A2D4AC63962645F /* libPods-DataMigration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,10 @@
 		1F3D527F1E8A85330074BD68 /* YuLeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuLeModel.m; sourceTree = "<group>"; };
 		1F3D52811E8A87CF0074BD68 /* DataAutoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAutoTool.h; sourceTree = "<group>"; };
 		1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAutoTool.m; sourceTree = "<group>"; };
+		1F5D55D71E8B827600A7EB24 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		1F5D55DA1E8B85D400A7EB24 /* MigrationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationTool.h; sourceTree = "<group>"; };
+		1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationTool.m; sourceTree = "<group>"; };
 		34104B134422A4DF66C5EBA6 /* Pods-DataMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.debug.xcconfig"; sourceTree = "<group>"; };
 		3739ADFEE8B32CE1A4B3D73C /* Pods-DataMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.release.xcconfig"; sourceTree = "<group>"; };
 		D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataMigration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,10 @@
 				1F3D527C1E8A84E90074BD68 /* CeShiModel.m */,
 				1F3D527E1E8A85330074BD68 /* YuLeModel.h */,
 				1F3D527F1E8A85330074BD68 /* YuLeModel.m */,
+				1F5D55D71E8B827600A7EB24 /* ThirdViewController.h */,
+				1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */,
+				1F5D55DA1E8B85D400A7EB24 /* MigrationTool.h */,
+				1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */,
 				1F3D52641E8A62A50074BD68 /* Main.storyboard */,
 				1F3D52671E8A62A50074BD68 /* Assets.xcassets */,
 				1F3D52691E8A62A50074BD68 /* LaunchScreen.storyboard */,
@@ -262,8 +272,10 @@
 				1F3D52631E8A62A50074BD68 /* ViewController.m in Sources */,
 				1F3D52771E8A685D0074BD68 /* HandleSqliteTable.m in Sources */,
 				1F3D527D1E8A84E90074BD68 /* CeShiModel.m in Sources */,
+				1F5D55D91E8B827600A7EB24 /* ThirdViewController.m in Sources */,
 				1F3D52601E8A62A50074BD68 /* AppDelegate.m in Sources */,
 				1F3D525D1E8A62A50074BD68 /* main.m in Sources */,
+				1F5D55DC1E8B85D400A7EB24 /* MigrationTool.m in Sources */,
 				1F3D52831E8A87CF0074BD68 /* DataAutoTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
