@@ -21,6 +21,9 @@
 		1F3D52831E8A87CF0074BD68 /* DataAutoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D52821E8A87CF0074BD68 /* DataAutoTool.m */; };
 		1F5D55D91E8B827600A7EB24 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */; };
 		1F5D55DC1E8B85D400A7EB24 /* MigrationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */; };
+		1F5D55E11E8B92B400A7EB24 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55E01E8B92B400A7EB24 /* FourViewController.m */; };
+		1F5D55ED1E8B9E7E00A7EB24 /* CoreDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55EC1E8B9E7E00A7EB24 /* CoreDataTool.m */; };
+		1F5D55FB1E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D55F91E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodeld */; };
 		21C9E2B66A2D4AC63962645F /* libPods-DataMigration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,12 @@
 		1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		1F5D55DA1E8B85D400A7EB24 /* MigrationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationTool.h; sourceTree = "<group>"; };
 		1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationTool.m; sourceTree = "<group>"; };
+		1F5D55DF1E8B92B400A7EB24 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		1F5D55E01E8B92B400A7EB24 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		1F5D55EB1E8B9E7E00A7EB24 /* CoreDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTool.h; sourceTree = "<group>"; };
+		1F5D55EC1E8B9E7E00A7EB24 /* CoreDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTool.m; sourceTree = "<group>"; };
+		1F5D55FA1E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMigrate.xcdatamodel; sourceTree = "<group>"; };
+		1F5D56201E8BB30C00A7EB24 /* CoreDataMigrate 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataMigrate 2.xcdatamodel"; sourceTree = "<group>"; };
 		34104B134422A4DF66C5EBA6 /* Pods-DataMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.debug.xcconfig"; sourceTree = "<group>"; };
 		3739ADFEE8B32CE1A4B3D73C /* Pods-DataMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataMigration.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataMigration/Pods-DataMigration.release.xcconfig"; sourceTree = "<group>"; };
 		D8B426FD9F7EEB33E7D1CC43 /* libPods-DataMigration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataMigration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +118,11 @@
 				1F5D55D81E8B827600A7EB24 /* ThirdViewController.m */,
 				1F5D55DA1E8B85D400A7EB24 /* MigrationTool.h */,
 				1F5D55DB1E8B85D400A7EB24 /* MigrationTool.m */,
+				1F5D55DF1E8B92B400A7EB24 /* FourViewController.h */,
+				1F5D55E01E8B92B400A7EB24 /* FourViewController.m */,
+				1F5D55F91E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodeld */,
+				1F5D55EB1E8B9E7E00A7EB24 /* CoreDataTool.h */,
+				1F5D55EC1E8B9E7E00A7EB24 /* CoreDataTool.m */,
 				1F3D52641E8A62A50074BD68 /* Main.storyboard */,
 				1F3D52671E8A62A50074BD68 /* Assets.xcassets */,
 				1F3D52691E8A62A50074BD68 /* LaunchScreen.storyboard */,
@@ -178,6 +192,7 @@
 					1F3D52571E8A62A50074BD68 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = BQ9TFQKXJU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,11 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3D52801E8A85330074BD68 /* YuLeModel.m in Sources */,
+				1F5D55ED1E8B9E7E00A7EB24 /* CoreDataTool.m in Sources */,
 				1F3D527A1E8A81620074BD68 /* SecondViewController.m in Sources */,
 				1F3D52741E8A62F00074BD68 /* DataBaseTool.m in Sources */,
 				1F3D52631E8A62A50074BD68 /* ViewController.m in Sources */,
 				1F3D52771E8A685D0074BD68 /* HandleSqliteTable.m in Sources */,
 				1F3D527D1E8A84E90074BD68 /* CeShiModel.m in Sources */,
+				1F5D55E11E8B92B400A7EB24 /* FourViewController.m in Sources */,
+				1F5D55FB1E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodeld in Sources */,
 				1F5D55D91E8B827600A7EB24 /* ThirdViewController.m in Sources */,
 				1F3D52601E8A62A50074BD68 /* AppDelegate.m in Sources */,
 				1F3D525D1E8A62A50074BD68 /* main.m in Sources */,
@@ -395,11 +413,15 @@
 			baseConfigurationReference = 34104B134422A4DF66C5EBA6 /* Pods-DataMigration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BQ9TFQKXJU;
 				INFOPLIST_FILE = DataMigration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zssy.AM.DataMigration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataMigration/DataMigration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -408,11 +430,14 @@
 			baseConfigurationReference = 3739ADFEE8B32CE1A4B3D73C /* Pods-DataMigration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BQ9TFQKXJU;
 				INFOPLIST_FILE = DataMigration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zssy.AM.DataMigration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DataMigration/DataMigration-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -438,6 +463,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F5D55F91E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F5D56201E8BB30C00A7EB24 /* CoreDataMigrate 2.xcdatamodel */,
+				1F5D55FA1E8BA8B000A7EB24 /* CoreDataMigrate.xcdatamodel */,
+			);
+			currentVersion = 1F5D56201E8BB30C00A7EB24 /* CoreDataMigrate 2.xcdatamodel */;
+			path = CoreDataMigrate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F3D52501E8A62A50074BD68 /* Project object */;
 }
